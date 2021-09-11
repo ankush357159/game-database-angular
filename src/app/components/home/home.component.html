@@ -1,0 +1,36 @@
+<div class="filters">
+	<mat-form-field>
+		<mat-label>Sort</mat-label>
+		<mat-select panelClass="sort-select" [(ngModel)]="sort">
+			<mat-option value="name">Name</mat-option>
+			<mat-option value="-released">Released</mat-option>
+			<mat-option value="-added">Added</mat-option>
+			<mat-option value="-created">Created</mat-option>
+			<mat-option value="-updated">Updated</mat-option>
+			<mat-option value="-rating">Rating</mat-option>
+			<mat-option value="metacritic">Metacritic</mat-option>
+		</mat-select>
+	</mat-form-field>
+</div>
+
+<div class="games">
+	<div class="game">
+		<div class="game-thumb-container">
+			<img
+				src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc5MDgyNjY5OTc1MjYz/new-york-city.jpg"
+				alt="thumbnail"
+				class="game-thumbnail"
+			/>
+		</div>
+		<div class="game-description">
+			<p class="game-name">Names</p>
+			<div class="game-platforms">
+				<img
+					src="https://images.all-free-download.com/images/graphiclarge/happy_new_year_explore_514976.jpg"
+					alt="slug"
+					class="game-platform"
+				/>
+			</div>
+		</div>
+	</div>
+</div>
